@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudokaiPlay</title>
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+    <main>
+        <div class="players">
+            <ul id="leftList" class="list"></ul>
+            <div class="fighter">
+                <img id="leftImage" class="image-preview">
+                <p id="leftHealth" class="health"></p>
+            </div>
+
+            <div class="fighter">
+                <img id="rightImage" class="image-preview">
+                <p id="rightHealth" class="health"></p>
+            </div>
+            <ul id="rightList" class="list"></ul>
+        </div>
+    
+        <div class="controls">
+            <p id="turnIndicator">Turno de: 🥋</p>
+            <button id="fightBtn" class="fight">Pelear</button>
+            <button id="healBtn" class="heal">Curar</button>
+        </div>
+    </main>
+    <div id="logContainer">
+        <h3>Registro de la pelea</h3>
+        <ul id="actionLog"></ul>
+    </div>    
+    <script src="./../scripts/players.js"></script>
+</body>
+</html>
